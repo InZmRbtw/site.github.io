@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Shop</title>
+        <link rel="icon" href="img/logo.png">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/mainpage.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="header-nav">
+                <div class="header-link-block">
+                    <div class="header-link-wrapper">
+                        <div class="logo">
+                            <a href="index.html"></a>
+                        </div>
+                        <div class="search">
+                            <div class="search-field">
+                                <input type="search" placeholder="Искать книги">
+                                <button class="loupe" type="button">
+                                    <img src="img/icons/loupe.png" alt="loupe-img">
+                                </button>
+                            </div>
+                        </div>
+                        <button class="header-burger-button" type="button">
+                            <div class="header-burger">
+                                <span class="header-burger-line"></span>
+                            </div>
+                        </button>
+                        <div class="navigation-links">
+                            <div class="login">
+                                <a href="login.html">
+                                    <img src="img/icons/login.png" alt="login-image">
+                                    <span>Войти</span>
+                                </a>
+                            </div>
+                            <div class="orders">
+                                <a href="orders.html">
+                                    <img src="img/icons/orders.png" alt="orders-image">
+                                    <span>Заказы</span>
+                                </a>
+                            </div>
+                            <div class="favourites">
+                                <a href="favorites.html">
+                                    <img src="img/icons/heart.png" alt="heart-image">
+                                    <span>Избранное</span>
+                                    <div class="favourites-number">
+                                        4
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="img/icons/cart.png" alt="cart-image">
+                                    <span>Корзина</span>
+                                    <span class="cart-number">3</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog-overlay invisible"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="mainpage">
+          
+            <div class="modal">
+                <div class="modal-content">
+                  <span class="close-button">&times;</span>
+                  <h2>Заголовок модального окна</h2>
+                  <p>Текст модального окна</p>
+                </div>
+              </div>
+            <div class="product-list">
+                <div class="product-card-wrapper" data-name="ведьмак сапковский последнее желание">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_последнее_желание_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Последнее желание. Сапковский.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="ведьмак сапковский меч предназначения">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_меч_предназначения_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Меч предназначения</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="ведьмак сапковский кровь эльфов">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_кровь_эльфов_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Кровь эльфов. Сапковский.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="ведьмак сапковский час презрения">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_час_презрения_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Час презрения. Сапковский.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="ведьмак сапковский крещение огнем">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_крещение_огнем_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Крещение огнем. Сапковский.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="ведьмак сапковский башня ласточки">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_башня_ласточки_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Башня ласточки. Сапковский.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="ведьмак сапковский владычица озера">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_владычица_озера_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Владычица озера. Сапковский.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="ведьмак сапковский дорога без возврата">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_дорога_без_возврата_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Дорога без возврата. Сапковский.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="ведьмак сапковский сезон гроз">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_сезон_гроз_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Сезон гроз. Сапковский.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="ведьмак сапковский клыки и когти">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/сапковский/ведьмак_когти_и_клыки_сапковский.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">510 ₽</span>
+                            <span class="product-text">Ведьмак. Когти и клыки. Сапковский.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="садамото евангелион">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/садамото/book1.jpeg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">1350 ₽</span>
+                            <span class="product-text">Евангелион. Книга 1. Ёсиюки Садамото.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="садамото евангелион">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/садамото/book2.jpeg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">1350 ₽</span>
+                            <span class="product-text">Евангелион. Книга 2. Ёсиюки Садамото.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="брэдбери вино из одуванчиков">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/брэдбери/вино_из_одуванчиков.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">270 ₽</span>
+                            <span class="product-text">Вино из одуванчиков. Брэдбери.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="брэдбери темный карнавал">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/брэдбери/темный_карнавал.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">270 ₽</span>
+                            <span class="product-text">Темный карнавал. Брэдбери.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper" data-name="брэдбери вождение вслепую">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/books/брэдбери/вождение_вслепую.jpg" alt="">
+                            <button type="button" class="add-to-favourites-btn not-liked"></button>
+                        </div>
+                        <div class="product-description">
+                            <span class="product-price">270 ₽</span>
+                            <span class="product-text">Вождение вслепую. Брэдбери.</span>
+                            <div class="product-rating">
+                                <img src="img/icons/rating.png" alt="rating">
+                            </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="show-modal-btn">Подробнее</button>
+                              </div>
+                            <div class="product-button-wrapper">
+                                <button type="button" class="add-to-cart-btn">
+                                    Купить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="empty-list invisible">
+                <img src="img/sad.png" alt="sad-face">
+                <span>Извините, по вашему запросу ничего не найдено.</span>
+            </div>
+        </main>
+        <footer>
+            <section class="footer_container">
+                <section class="about_us">
+                    <h2>О нас</h2>
+                    <p>Выполнено студентом 3ИС-22/K, Вадимом Шестопаловым</p>
+                    <ul class="socialNetwork">
+                        <li><a href="https://t.me/mentallybrokenxd" target="_blank" class="tg-link"><img src="img/icons/tg.png" alt="tg"></a></li>
+                    </ul>
+                </section>
+                <section class="quicklinks">
+                    <h2>Ссылки</h2>
+                    <ul>
+                        <li><a href="not-found.html">О нас</a></li>
+                        <li><a href="not-found.html">Вопросы</a></li>
+                        <li><a href="not-found.html">Политика конфиденциальности</a></li>
+                        <li><a href="not-found.html">Помощь</a></li>
+                        <li><a href="not-found.html">Правила и условия</a></li>
+                        <li><a href="not-found.html">Контакты</a></li>
+                    </ul>
+                </section>
+                <section class="quicklinks">
+                    <h2>Магазин</h2>
+                    <ul>
+                        <li><a href="index.html">Книги</a></li>
+                        <li><a href="not-found.html">Канцелярия</a></li>
+                        <li><a href="not-found.html">Акции</a></li>
+                        <li><a href="not-found.html">Спонсоры</a></li>
+                        <li><a href="not-found.html">Анонсы</a></li>
+                    </ul>
+                </section>
+                <section class="contact">
+                    <h2>Контакты</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="img/icons/location.png" alt="loc"></span>
+                            <span><br>Россия</span>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+        <aside class="anchor-top">
+            <img src="img/icons/top_arrow.png" alt="top-arrow">
+        </aside>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/mainpage.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/pop-up.js"></script>
+    </body>
+</html>

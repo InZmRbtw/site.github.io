@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Shop</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <header>
+            <nav class="header-nav">
+                <div class="header-link-block">
+                    <div class="header-link-wrapper">
+                        <div class="logo">
+                            <a href="index.html"></a>
+                        </div>
+                        <button class="header-burger-button" type="button">
+                            <div class="header-burger">
+                                <span class="header-burger-line"></span>
+                            </div>
+                        </button>
+                        <div class="navigation-links">
+                            <div class="login">
+                                <a href="login.html">
+                                    <img src="img/icons/login.png" alt="login-image">
+                                    <span>Войти</span>
+                                </a>
+                            </div>
+                            <div class="orders">
+                                <a href="orders.html">
+                                    <img src="img/icons/orders.png" alt="orders-image">
+                                    <span>Заказы</span>
+                                </a>
+                            </div>
+                            <div class="favourites">
+                                <a href="favorites.html">
+                                    <img src="img/icons/heart.png" alt="heart-image">
+                                    <span>Избранное</span>
+                                    <div class="favourites-number">
+                                        4
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="img/icons/cart.png" alt="cart-image">
+                                    <span>Корзина</span>
+                                    <span class="cart-number">3</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog-overlay invisible"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="login-page">
+            <div class="login-container">
+                <div class="login-img"></div>
+                <div class="login-wrapper login-active">
+                    <img src="img/icons/user.png" alt="login">
+                    <span>Логин</span>
+                </div>
+                <div class="register-wrapper">
+                    <img src="img/icons/register.png" alt="register">
+                    <span>Регистрация</span>
+                </div>
+                <div class="forgot-password-wrapper">
+                    <img src="img/icons/password.png" alt="forgot-password">
+                    <span>Забыли пароль?</span>
+                </div>
+
+                <div class="login-form-wrapper">
+                    <div class="logining">
+                        <form class="login-form" action="login.html" method="post">
+                            <h2>Логин</h2>
+                            <div class="email-wrapper">
+                                <img src="img/icons/mail.png" alt="mail-image">
+                                <input type="email" placeholder="Логин">
+                            </div>
+                            <div class="password-wrapper">
+                                <img src="img/icons/key.png" alt="password-image">
+                                <input type="password" placeholder="Пароль">
+                            </div>
+                            <button class="submit-button" type="submit">Войти</button>
+                        </form>
+                    </div>
+
+                    <div class="registration invisible">
+                        <form class="login-form" action="login.html" method="post">
+                            <h2>Регистрация</h2>
+                            <div class="email-wrapper">
+                                <img src="img/icons/mail.png" alt="mail-image">
+                                <input type="email" placeholder="Адресс электронной почты">
+                            </div>
+                            <div class="password-wrapper">
+                                <img src="img/icons/key.png" alt="password-image">
+                                <input type="password" placeholder="Пароль">
+                            </div>
+                            <div class="password-wrapper">
+                                <img src="img/icons/key.png" alt="password-image">
+                                <input type="password" placeholder="Секретное слово">
+                            </div>
+                            <button class="submit-button" type="submit">Зарегестрироваться</button>
+                        </form>
+                    </div>
+
+                    <div class="recovering-password invisible">
+                        <form class="login-form" action="login.html" method="post">
+                            <h2>Восстановление пароля</h2>
+                            <div class="email-wrapper">
+                                <img src="img/icons/mail.png" alt="mail-image">
+                                <input type="email" placeholder="Укажите адрес почты, к которой привязан аккаунт">
+                            </div>
+                            <div class="password-wrapper">
+                                <img src="img/icons/key.png" alt="password-image">
+                                <input type="password" placeholder="Секретное слово">
+                            </div>
+                            <button class="submit-button" type="submit">Восстановить пароль</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="footer_container">
+                <section class="about_us">
+                    <h2>О нас</h2>
+                    <p>Выполнено студентами 3ИС-22/K Вадимом Шестопаловым</p>
+                    <ul class="socialNetwork">
+                        <li><a href="https://vk.com/ban_777" target="_blank" class="vk-link"><img src="img/icons/vk.png" alt="vk"></a></li>
+                        <li><a href="https://github.com/Ban4ik3" target="_blank" class="gt-link"><img src="img/icons/gt.png" alt="gt"></a></li>
+                        <li><a href="https://t.me/Ban4kik3" target="_blank" class="tg-link"><img src="img/icons/tg.png" alt="tg"></a></li>
+                    </ul>
+                </section>
+                <section class="quicklinks">
+                    <h2>Ссылки</h2>
+                    <ul>
+                        <li><a href="not-found.html">О нас</a></li>
+                        <li><a href="not-found.html">Вопросы</a></li>
+                        <li><a href="not-found.html">Политика конфиденциальности</a></li>
+                        <li><a href="not-found.html">Помощь</a></li>
+                        <li><a href="not-found.html">Правила и условия</a></li>
+                        <li><a href="not-found.html">Контакты</a></li>
+                    </ul>
+                </section>
+                <section class="quicklinks">
+                    <h2>Магазин</h2>
+                    <ul>
+                        <li><a href="index.html">Книги</a></li>
+                        <li><a href="not-found.html">Канцелярия</a></li>
+                        <li><a href="not-found.html">Акции</a></li>
+                        <li><a href="not-found.html">Спонсоры</a></li>
+                        <li><a href="not-found.html">Анонсы</a></li>
+                    </ul>
+                </section>
+                <section class="contact">
+                    <h2>Контакты</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="img/icons/location.png" alt="loc"></span>
+                            <span><br>Россия</span>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+        <aside class="anchor-top">
+            <img src="img/icons/top_arrow.png" alt="top-arrow">
+        </aside>
+        <script src="scripts/login.js"></script>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
