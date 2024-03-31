@@ -1,0 +1,149 @@
+/* FOOTER */
+
+footer {
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    box-shadow: inset 0 0 10px -6px black;
+    margin-top: 15px;
+    background-color: gray;
+    text-decoration: none;
+    z-index: 0;
+}
+
+footer img {
+    filter: invert(100%);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--darkgreen);
+    text-decoration: underline;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .footer_container h2 {
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer_container h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1.7px;
+    background: var(--green2);
+}
+
+.socialNetwork {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialNetwork li {
+    list-style: none;
+}
+
+.quicklinks li a {
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.socialNetwork a {
+    height: 50px;
+    width: 50px;
+    background-color: var(--darkgreen);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow:  0 0 10px -6px black;
+}
+
+.socialNetwork a img {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+}
+
+.vk-link:hover::before,
+.gt-link:hover::before,
+.tg-link:hover::before {
+    top: 0;
+}
+
+.socialNetwork a::before {
+    content: '';
+    position: relative;
+    top: -60px;
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(135deg, #21a038, #9b38dc);
+    transition: 0.5s;
+}
+
+.contact img {
+    width: 20px;
+}
+
+.copyright_text {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    background-color: var(--darkgreen);
+    padding: 3px 0;
+    text-align: center;
+    color: var(--green2);
+}
+
+@media (max-width: 960px) {
+    footer {
+        padding: 40px;
+    }
+    footer .footer_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .copyright_text {
+        padding: 25px 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer .footer_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

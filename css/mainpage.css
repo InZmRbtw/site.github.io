@@ -1,0 +1,101 @@
+.mainpage {
+    width: 100%;
+    height: auto;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* CSS-код для кнопки "Подробнее" */
+  .show-modal-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.slider-wrapper {
+    margin: 20px auto;
+    width: 75%;
+    aspect-ratio: 3244 / 1288;
+    box-sizing: border-box;
+}
+
+.slider-line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 0%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px -5px black;
+}
+
+.slider-line img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+@media (max-width: 960px) {
+    .slider-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .slider-line {
+        border-radius: unset;
+    }
+
+    .slider-line img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-wrapper {
+        display: none;
+    }
+}

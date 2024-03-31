@@ -1,0 +1,199 @@
+input:focus::placeholder {
+    font-size: 0px;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.login-container {
+    min-width: 420px;
+    width: 80%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px -5px black;
+}
+
+.login-img {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    background-image: url("../img/books-login.jpg");
+    background-size: cover;
+}
+
+.login-form-wrapper {
+    grid-row: 1 / 4;
+    grid-column: 3 / 4;
+}
+
+.login-wrapper,
+.register-wrapper,
+.forgot-password-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.login-wrapper::after,
+.register-wrapper::after,
+.forgot-password-wrapper::after {
+    width: 1.5px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    content: '';
+    background-color: lightgray;
+}
+
+.login-active {
+    background-color: var(--green);
+}
+
+.login-active * {
+    filter: invert(100%);
+}
+
+.login-container > div > img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.login-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form * {
+    margin: 0;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form img {
+    width: 20px;
+    height: 20px;
+}
+
+.login-form input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.email-wrapper,
+.password-wrapper {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white;
+    height: 50px;
+    width: 80%;
+    border-radius: 25px;
+    padding: 10px;
+    border: 2px solid var(--violet);
+    margin: 15px 0;
+}
+
+.submit-button {
+    margin-top: 20px;
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--violet);
+    color: var(--light-font-color);
+    font-size: 16px;
+}
+
+.logining,
+.registration,
+.recovering-password {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 960px) {
+    .login-container {
+        grid-template-columns: repeat(3, 1fr);
+        height: 95%;
+    }
+
+    .login-wrapper::after,
+    .register-wrapper::after,
+    .forgot-password-wrapper::after {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        content: '';
+        background-color: lightgray;
+    }
+
+    .login-img {
+        display: none;
+    }
+
+    .login-form-wrapper {
+        grid-row: 2 / 4;
+        grid-column: 1 / 4;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .login-container {
+        grid-template-rows: 120px 1fr 1fr;
+        grid-gap: 0;
+        height: 100%;
+        min-width: 0;
+        width: 100%;
+        box-shadow: none;
+        border-radius: unset;
+    }
+}
+
+@media (max-width: 420px) {
+    .login-wrapper > span,
+    .register-wrapper > span,
+    .forgot-password-wrapper > span {
+        display: none;
+    }
+
+    .login-wrapper,
+    .register-wrapper,
+    .forgot-password-wrapper {
+        height:
+    }
+
+    .submit-button {
+        width: 80%;
+    }
+}
